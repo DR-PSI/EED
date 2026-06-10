@@ -345,7 +345,7 @@ body{font-family:'Sarabun',sans-serif;background:var(--bg);color:var(--text);min
     <div class="nav-item" onclick="showPage('monitor')"><span class="nav-icon">🗺️</span><span>Monitor ช่าง</span><span class="nav-badge" id="badge-online">3</span></div>
     <div class="nav-section">งาน</div>
     <div class="nav-item" onclick="showPage('workorders')"><span class="nav-icon">📋</span><span>รายการงาน</span><span class="nav-badge">5</span></div>
-    <div class="nav-item" onclick="showPage('create')"><span class="nav-icon">➕</span><span>สร้างใบงาน</span></div>
+    <div class="nav-item" onclick="showPage('create')"><span class="nav-icon">➕</span><span>สร้างใบจ่ายงาน</span></div>
     <div class="nav-section">รายงาน</div>
     <div class="nav-item" onclick="showPage('report')"><span class="nav-icon">📈</span><span>รายงานประจำวัน</span></div>
   </div>
@@ -428,7 +428,7 @@ body{font-family:'Sarabun',sans-serif;background:var(--bg);color:var(--text);min
           <select class="filter-select" id="filter-tech" onchange="filterWOTech(this.value)">
             <option value="all">ช่างทุกคน</option>
           </select>
-          <button class="btn btn-primary" style="margin-left:auto;" onclick="showPage('create')">➕ สร้างใบงานใหม่</button>
+          <button class="btn btn-primary" style="margin-left:auto;" onclick="showPage('create')">➕ สร้างใบจ่ายงาน</button>
         </div>
         <table class="wo-table">
           <thead>
@@ -452,7 +452,7 @@ body{font-family:'Sarabun',sans-serif;background:var(--bg);color:var(--text);min
 
     <!-- ── PAGE: CREATE ── -->
     <div class="page" id="page-create">
-      <div class="page-title">สร้างใบงานใหม่</div>
+      <div class="page-title">สร้างใบจ่ายงาน</div>
       <div class="page-sub">กรอกข้อมูลจากรายงาน SAP แล้วจ่ายงานให้ช่าง</div>
       <div class="panel" style="max-width:720px;">
         <div class="panel-head"><div class="panel-title">📋 ข้อมูลใบงาน</div></div>
@@ -565,7 +565,7 @@ body{font-family:'Sarabun',sans-serif;background:var(--bg);color:var(--text);min
       <span class="bn-badge">5</span>
     </div>
     <div class="bn-item" id="bn-create" onclick="showPage('create');setBN('create')">
-      <span class="bn-icon">➕</span><span>สร้างงาน</span>
+      <span class="bn-icon">➕</span><span>สร้างใบจ่ายงาน</span>
     </div>
     <div class="bn-item" id="bn-report" onclick="showPage('report');setBN('report')">
       <span class="bn-icon">📈</span><span>รายงาน</span>
